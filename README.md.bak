@@ -26,8 +26,8 @@ Note : Once we started the sprint boot application automatically batch will trig
 
 ### APIs
 
-1. POST API:
+1. Read API:
+	http://localhost:8080/
+2. POST API:
 	http://localhost:8080/
 	Body Content : {"name":"Test","logId":1,"message":"test"}
-2. Read API:
-	http://localhost:8080/
