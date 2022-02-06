@@ -1,11 +1,11 @@
 CREATE TABLE public.log (
-	id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	id serial not null PRIMARY KEY,
 	"name" varchar NOT NULL,
 	created_on timestamp NOT NULL,
 	message text NOT NULL,
 	log_id int NOT NULL,
 	deleted bool NOT NULL DEFAULT false,
-	max_age int NOT NULL DEFAULT 3600
+	max_age int NOT NULL DEFAULT 3600 
 );
 CREATE INDEX log_created_on_idx ON public.log (created_on,deleted);
 
