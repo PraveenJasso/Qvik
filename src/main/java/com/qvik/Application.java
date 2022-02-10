@@ -22,6 +22,7 @@ public class Application {
 	@Autowired
 	Job job;
 	
+	
 	private static final Logger logger = LogManager.getLogger(Application.class.getName());
 
 	public static void main(String[] args) {
