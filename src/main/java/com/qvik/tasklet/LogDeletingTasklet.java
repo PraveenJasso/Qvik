@@ -36,7 +36,7 @@ public class LogDeletingTasklet implements Tasklet, InitializingBean {
 		logger.info("****** started execute ******* ");
 		Calendar calendar = Calendar.getInstance();
 	    calendar.setTime(new Timestamp(System.currentTimeMillis()));
-	    calendar.add(Calendar.HOUR, 1);
+	    calendar.add(Calendar.SECOND, maxAge);
 	    Date date = calendar.getTime();
 		Timestamp createdOn = new Timestamp(date.getTime());
 		logger.info("logRepository ?????????? " + maxAge);
